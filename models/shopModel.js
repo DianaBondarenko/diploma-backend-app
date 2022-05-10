@@ -30,6 +30,17 @@ const shopSchema = new mongoose.Schema(
   }
 );
 
+// categorySchema.virtual('products', {
+//     ref: 'Product',
+//     foreignField: 'category_id',
+//     localField: '_id',
+// });
+shopSchema.virtual('products', {
+  ref: 'Proposal',
+  foreignField: 'shop_id',
+  localField: '_id',
+});
+
 const Shop = mongoose.model('Shop', shopSchema);
 
 module.exports = Shop;
