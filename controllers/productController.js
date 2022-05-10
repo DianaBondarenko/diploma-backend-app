@@ -30,7 +30,7 @@ exports.getProduct = factory.getOne(Product, {
   options: { select: { price: 1 } },
 });
 
-exports.getProductsAvailability = catchAsync(async (req, res, next) => {
+exports.getShopProposals = catchAsync(async (req, res, next) => {
   if (!req.body.length) {
     return next(
       new AppError('Please provide a list of desired products.', 400)
