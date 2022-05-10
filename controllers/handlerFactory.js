@@ -60,10 +60,16 @@ exports.getOne = (Model, populateOptions) =>
     });
   });
 
-exports.getAll = (Model) =>
+exports.getAll = (Model, populateOptions) =>
   catchAsync(async (req, res, next) => {
+    let query = Model.find();
+
+    if (populateOptions) {
+      query = query.populate(populateOptions);
+    }
+
     // EXECUTE QUERY
-    const features = new APIFeatures(Model.find(), req.query)
+    const features = new APIFeatures(query, req.query)
       .filter()
       .sort()
       .limitFields()

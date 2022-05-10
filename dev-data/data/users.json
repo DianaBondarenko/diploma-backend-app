@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "62797f4d6a6e4919a66df8e0",
+    "email": "testuser@gmail.com",
+    "role": "user"
+  },
+  {
+    "_id": "62797f4d6a6e4919a66df8e1",
+    "email": "testshop1@gmail.com",
+    "role": "shop"
+  },
+  {
+    "_id": "62797f4d6a6e4919a66df8e2",
+    "email": "testshop2@gmail.com",
+    "role": "shop"
+  }
+]

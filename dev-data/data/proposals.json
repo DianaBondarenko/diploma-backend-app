@@ -1,0 +1,65 @@
+[
+  {
+    "_id": "62799b77d9c17e1efd8b5c96",
+    "product_id": "62791d845f0bcf152034db15",
+    "price": 33,
+    "count": 10,
+    "shop_id": "62798dd13ec47e1c74d4b272"
+  },
+  {
+    "_id": "62799b77d9c17e1efd8b5c97",
+    "product_id": "62791d845f0bcf152034db17",
+    "price": 33,
+    "count": 10,
+    "shop_id": "62798dd13ec47e1c74d4b272"
+  },
+  {
+    "_id": "62799b77d9c17e1efd8b5c98",
+    "product_id": "62791d845f0bcf152034db16",
+    "price": 33,
+    "count": 10,
+    "shop_id": "62798dd13ec47e1c74d4b272"
+  },
+  {
+    "_id": "62799b77d9c17e1efd8b5c99",
+    "product_id": "62791d845f0bcf152034db15",
+    "price": 35,
+    "count": 3,
+    "shop_id": "62798dd13ec47e1c74d4b276"
+  },
+  {
+    "_id": "62799b77d9c17e1efd8b5c9a",
+    "product_id": "62791d845f0bcf152034db17",
+    "price": 35,
+    "count": 11,
+    "shop_id": "62798dd13ec47e1c74d4b276"
+  },
+  {
+    "_id": "62799b77d9c17e1efd8b5c9b",
+    "product_id": "62791d845f0bcf152034db16",
+    "price": 35,
+    "count": 10,
+    "shop_id": "62798dd13ec47e1c74d4b276"
+  },
+  {
+    "_id": "62799b77d9c17e1efd8b5c9c",
+    "product_id": "62791d845f0bcf152034db18",
+    "price": 22,
+    "count": 10,
+    "shop_id": "62798dd13ec47e1c74d4b276"
+  },
+  {
+    "_id": "62799b77d9c17e1efd8b5c9d",
+    "product_id": "62791d845f0bcf152034db1b",
+    "price": 31,
+    "count": 4,
+    "shop_id": "62798dd13ec47e1c74d4b276"
+  },
+  {
+    "_id": "62799b77d9c17e1efd8b5c9e",
+    "product_id": "62791d845f0bcf152034db1f",
+    "price": 38.59,
+    "count": 30,
+    "shop_id": "62798dd13ec47e1c74d4b276"
+  }
+]

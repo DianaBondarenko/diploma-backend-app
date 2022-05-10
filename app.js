@@ -8,6 +8,10 @@ const xss = require('xss-clean');
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
 
+require('./models/proposalModel');
+require('./models/shopModel');
+require('./models/userModel');
+
 const categoryRouter = require('./routes/categoryRoutes');
 const productRouter = require('./routes/productRoutes');
 

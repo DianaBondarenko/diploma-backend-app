@@ -4,6 +4,9 @@ const dotenv = require('dotenv');
 
 const Category = require('../../models/categoryModel');
 const Product = require('../../models/productModel');
+const User = require('../../models/userModel');
+const Shop = require('../../models/shopModel');
+const Proposal = require('../../models/proposalModel');
 
 dotenv.config({ path: './config.env' });
 
@@ -30,12 +33,21 @@ const categories = JSON.parse(
 const products = JSON.parse(
   fs.readFileSync(`${__dirname}/products.json`, 'utf-8')
 );
+const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf-8'));
+const shops = JSON.parse(fs.readFileSync(`${__dirname}/shops.json`, 'utf-8'));
+const proposals = JSON.parse(
+  fs.readFileSync(`${__dirname}/proposals.json`, 'utf-8')
+);
 
 // IMPORT DATA INTO DATABASE
 const importData = async () => {
   try {
     // await Category.create(categories);
     // await Product.create(products);
+    // await User.create(users);
+    // await Shop.create(shops);
+    // await Proposal.create(proposals);
+
     console.log('Data successfully loaded!');
   } catch (error) {
     console.log(error);
@@ -48,6 +60,10 @@ const deleteData = async () => {
   try {
     // await Category.deleteMany();
     // await Product.deleteMany();
+    // await User.deleteMany();
+    // await Shop.deleteMany();
+    // await Proposal.deleteMany();
+
     console.log('Data successfully deleted!');
   } catch (error) {
     console.log(error);
