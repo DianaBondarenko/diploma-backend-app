@@ -9,11 +9,11 @@ const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
 
 require('./models/proposalModel');
-require('./models/shopModel');
-require('./models/userModel');
 
 const categoryRouter = require('./routes/categoryRoutes');
 const productRouter = require('./routes/productRoutes');
+const shopRouter = require('./routes/shopRoutes');
+const orderRouter = require('./routes/orderRoutes');
 
 const app = express();
 
@@ -52,6 +52,8 @@ app.use(xss());
 // ROUTES
 app.use('/api/v1/categories', categoryRouter);
 app.use('/api/v1/products', productRouter);
+app.use('/api/v1/shops', shopRouter);
+app.use('/api/v1/orders', orderRouter);
 
 app.all('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
