@@ -1,17 +1,20 @@
 [
   {
-    "_id": "62797f4d6a6e4919a66df8e0",
-    "email": "testuser@gmail.com",
-    "role": "user"
-  },
-  {
     "_id": "62797f4d6a6e4919a66df8e1",
     "email": "testshop1@gmail.com",
-    "role": "shop"
+    "role": "shop",
+    "phone": "+380000000001",
+    "name": "Oleksandr",
+    "surname": "Hrytsiuk",
+    "password": "$2a$12$Q0grHjH9PXc6SxivC8m12.2mZJ9BbKcgFpwSG4Y1ZEII8HJVzWeyS"
   },
   {
     "_id": "62797f4d6a6e4919a66df8e2",
     "email": "testshop2@gmail.com",
-    "role": "shop"
+    "role": "shop",
+    "phone": "+380000000002",
+    "name": "Inna",
+    "surname": "Soltys",
+    "password": "$2a$12$Q0grHjH9PXc6SxivC8m12.2mZJ9BbKcgFpwSG4Y1ZEII8HJVzWeyS"
   }
 ]

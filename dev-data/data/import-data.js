@@ -44,7 +44,7 @@ const importData = async () => {
   try {
     // await Category.create(categories);
     // await Product.create(products);
-    // await User.create(users);
+    await User.create(users, { validateBeforeSave: false });
     // await Shop.create(shops);
     // await Proposal.create(proposals);
 
@@ -60,7 +60,7 @@ const deleteData = async () => {
   try {
     // await Category.deleteMany();
     // await Product.deleteMany();
-    // await User.deleteMany();
+    await User.deleteMany();
     // await Shop.deleteMany();
     // await Proposal.deleteMany();
 
