@@ -27,3 +27,19 @@ exports.getProduct = factory.getOne(Product, {
   path: 'proposals',
   options: { select: { price: 1 } },
 });
+
+exports.addProduct = catchAsync(async (req, res, next) => {
+  const newProduct = await Product.create({
+    name: req.body.name,
+    category_id: req.body.category_id,
+    weight: req.body.weight,
+    packing: req.body.packing,
+    manufacturer: req.body.manufacturer,
+    image: req.body.image,
+  });
+
+  res.status(200).json({
+    status: 'success',
+    data: newProduct,
+  });
+});

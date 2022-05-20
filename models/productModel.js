@@ -12,15 +12,23 @@ const productSchema = new mongoose.Schema(
         'Product name must have less or equal then 40 characters.',
       ],
     },
-    price: Number,
     category_id: {
       type: mongoose.Schema.ObjectId,
       ref: 'Category',
       required: [true, 'Product must belong to a category.'],
     },
-    weight: String,
-    packing: String,
-    manufacturer: String,
+    weight: {
+      type: String,
+      required: [true, 'Product must have a weight.'],
+    },
+    packing: {
+      type: String,
+      required: [true, 'Product must have a packing.'],
+    },
+    manufacturer: {
+      type: String,
+      required: [true, 'Product must have a manufacturer.'],
+    },
     image: String,
     proposals: [
       {

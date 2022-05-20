@@ -66,3 +66,28 @@ exports.getShopProposals = catchAsync(async (req, res, next) => {
     data: proposals,
   });
 });
+
+exports.addMyShop = catchAsync(async (req, res, next) => {
+  const newShop = await Shop.create({
+    name: req.body.name,
+    address: req.body.address,
+    coordinates: req.body.coordinates,
+    schedule: req.body.schedule,
+    owner: req.user.id,
+  });
+
+  res.status(200).json({
+    status: 'success',
+    data: newShop,
+  });
+});
+
+exports.getMyShops = catchAsync(async (req, res, next) => {
+  const shops = await Shop.find({ owner: req.user.id });
+
+  res.status(200).json({
+    status: 'success',
+    results: shops.length,
+    data: shops,
+  });
+});

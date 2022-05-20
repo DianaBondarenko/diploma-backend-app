@@ -1,17 +1,17 @@
 const express = require('express');
-const userController = require('../controllers/userController');
+const authController = require('../controllers/authController');
 
 const router = express.Router();
 
-router.post('/signup', userController.signup);
-router.post('/login', userController.login);
+router.post('/signup', authController.signup);
+router.post('/login', authController.login);
 
-router.post('/forgotPassword', userController.forgotPassword);
-router.patch('/resetPassword/:token', userController.resetPassword);
+router.post('/forgotPassword', authController.forgotPassword);
+router.patch('/resetPassword/:token', authController.resetPassword);
 
 // Protect routes after this middleware
-router.use(userController.protect);
+router.use(authController.protect);
 
-router.patch('/updatePassword', userController.updatePassword);
+router.patch('/updatePassword', authController.updatePassword);
 
 module.exports = router;
